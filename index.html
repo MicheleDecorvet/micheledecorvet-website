@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Psychologische Beratung & Coaching Zürich | Michele Decorvet</title>
+  <meta name="description" content="Michele Decorvet begleitet dich in Zürich und online bei Selbstwert, Beziehungsmustern, Female Empowerment und beruflicher Neuorientierung. Jetzt Termin anfragen.">
+  <link rel="canonical" href="https://micheledecorvet.ch/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph: Vorschau beim Teilen -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Michele Decorvet – Psychologische Beratung & Coaching">
+  <meta property="og:title" content="Psychologische Beratung & Coaching Zürich | Michele Decorvet">
+  <meta property="og:description" content="Selbstwert stärken, belastende Muster verändern, mehr Klarheit und innere Stärke entwickeln. Praxis in Zürich und online.">
+  <meta property="og:url" content="https://micheledecorvet.ch/">
+  <meta property="og:locale" content="de_CH">
+  <!-- Eigenes Bild fürs Teilen: 1200×630 px, sobald vorhanden unter images/og-bild.jpg ablegen -->
+  <meta property="og:image" content="https://micheledecorvet.ch/images/michele.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Strukturierte Daten für Google: macht das Angebot als lokale Praxis in Zürich erkennbar -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Michele Decorvet",
+    "description": "Psychologische Beratung und Coaching in Zürich: Selbstwert, Beziehungsmuster, Female Empowerment, berufliche Neuorientierung. Praxis und online.",
+    "url": "https://micheledecorvet.ch/",
+    "telephone": "+41 76 489 11 20",
+    "email": "michele.decorvet@psychologie.ch",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Vogelsangstrasse 7",
+      "postalCode": "8006",
+      "addressLocality": "Zürich",
+      "addressCountry": "CH"
+    },
+    "areaServed": "Zürich",
+    "priceRange": "CHF 170–250",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyID": "GLN",
+      "value": "7601 0093 4849 5"
+    },
+    "availableLanguage": ["Deutsch", "Schweizerdeutsch"],
+    "sameAs": ["https://www.psychologie.ch/de/psyfinder/michele-decorvet"]
+  }
+  </script>
+
+  <style>
+    :root {
+      --salbei: #5b7a68;
+      --salbei-tief: #3c5548;
+      --erde: #b0704a;
+      --papier: #faf7f1;
+      --tiefe: #2f2a26;
+      --grau: #6e655e;
+      --weiss: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+      color: var(--tiefe);
+      background: var(--papier);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .serif { font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--erde); outline-offset: 3px; }
+    img { max-width: 100%; display: block; }
+
+    /* Kopfzeile */
+    header { background: var(--papier); position: sticky; top: 0; z-index: 20; border-bottom: 1px solid rgba(47,42,38,.08); }
+    header .wrap { display: flex; justify-content: space-between; align-items: center; height: 84px; }
+    .logo { display: flex; flex-direction: column; text-decoration: none; color: var(--tiefe); line-height: 1.15; }
+    .logo strong { font-size: 1.15rem; font-weight: 600; }
+    .logo span { font-size: .78rem; color: var(--grau); letter-spacing: .04em; }
+    nav { display: flex; align-items: center; gap: 28px; font-size: .95rem; }
+    nav a { text-decoration: none; color: var(--grau); }
+    nav a:hover { color: var(--tiefe); }
+    nav .kontakt-link {
+      background: var(--erde); color: var(--weiss); padding: 10px 22px; border-radius: 999px; font-weight: 600;
+    }
+    .burger { display: none; width: 44px; height: 44px; border: 0; background: none; cursor: pointer; padding: 0; position: relative; }
+    .burger span, .burger span::before, .burger span::after {
+      content: ""; position: absolute; left: 11px; right: 11px; height: 2px; background: var(--tiefe); transition: transform .25s, opacity .25s;
+    }
+    .burger span { top: 21px; }
+    .burger span::before { top: -8px; }
+    .burger span::after { top: 8px; }
+    .menu-offen .burger span { background: transparent; }
+    .menu-offen .burger span::before { transform: translateY(8px) rotate(45deg); }
+    .menu-offen .burger span::after { transform: translateY(-8px) rotate(-45deg); }
+
+    /* Hero */
+    .hero { position: relative; padding: 90px 0 110px; overflow: hidden; }
+    .blob {
+      position: absolute; border-radius: 62% 38% 55% 45% / 45% 55% 45% 55%; opacity: .5; filter: blur(1px);
+      pointer-events: none;
+    }
+    .blob-1 { width: 480px; height: 480px; background: #dfe6de; top: -140px; right: -140px; }
+    .blob-2 { width: 320px; height: 320px; background: #efe0d3; bottom: -120px; left: -100px; opacity: .6; }
+    .hero .wrap { position: relative; max-width: 720px; }
+    .kicker { color: var(--erde); font-weight: 600; font-size: .92rem; margin-bottom: 18px; }
+    h1 { font-size: clamp(2.3rem, 5.2vw, 3.4rem); line-height: 1.2; font-weight: 500; margin: 0 0 24px; letter-spacing: -.01em; }
+    .hero p { font-size: 1.15rem; color: var(--grau); max-width: 34em; margin: 0 0 22px; }
+    .hero p:last-of-type { margin-bottom: 34px; }
+    .knoepfe { display: flex; gap: 14px; flex-wrap: wrap; }
+    .knopf {
+      display: inline-block; background: var(--erde); color: var(--weiss); text-decoration: none;
+      font-weight: 600; padding: 15px 32px; border-radius: 999px; border: 0; cursor: pointer;
+      font: inherit; font-weight: 600; transition: background .2s, transform .15s;
+    }
+    .knopf:hover { background: #9a5c3b; transform: translateY(-1px); }
+    .knopf:disabled { opacity: .6; cursor: default; transform: none; }
+    .knopf.linie { background: transparent; color: var(--tiefe); border: 1.5px solid rgba(47,42,38,.35); }
+    .knopf.linie:hover { border-color: var(--tiefe); background: transparent; transform: none; }
+
+    section { padding: 92px 0; }
+    .eyebrow { color: var(--erde); font-weight: 600; font-size: .9rem; margin-bottom: 14px; }
+    h2 { font-size: clamp(1.85rem, 4vw, 2.5rem); font-weight: 500; letter-spacing: -.01em; margin: 0 0 20px; max-width: 19em; }
+    .lead { color: var(--grau); font-size: 1.1rem; max-width: 38em; margin: 0 0 48px; }
+
+    /* Vertrauenspunkte */
+    .punkte { background: var(--salbei); color: var(--weiss); }
+    .punkte .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+    .punkte div { display: flex; gap: 12px; align-items: flex-start; font-size: .93rem; }
+    .punkte svg { flex: none; width: 24px; height: 24px; margin-top: 1px; }
+
+    /* Über mich */
+    .ueber .raster { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: start; }
+    .bildfeld { position: relative; }
+    .bildfeld .blob { position: absolute; width: 340px; height: 340px; background: #e3ded0; top: -30px; left: -30px; opacity: .7; z-index: 0; }
+    .portrait-gross {
+      position: relative; z-index: 1; aspect-ratio: 4/5; border-radius: 46% 54% 40% 60% / 55% 45% 55% 45%;
+      background: var(--salbei); color: var(--weiss); display: grid; place-items: center; overflow: hidden;
+      font-size: 3rem; font-weight: 500;
+    }
+    .portrait-gross img { width: 100%; height: 100%; object-fit: cover; }
+    .ueber h3 { font-size: 1.2rem; font-weight: 600; margin: 36px 0 10px; }
+    .ueber h3:first-child { margin-top: 0; }
+    .ueber p { margin: 0 0 4px; color: var(--tiefe); }
+    .profil-link { display: inline-block; margin-top: 28px; font-size: .92rem; color: var(--erde); text-decoration: underline; }
+
+    /* Schwerpunkte */
+    .checkliste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 40px; }
+    .checkliste li { display: flex; gap: 12px; align-items: flex-start; font-size: 1.02rem; }
+    .checkliste svg { flex: none; width: 20px; height: 20px; margin-top: 3px; color: var(--erde); }
+
+    /* Spezialisierungen & Zielgruppen (Tags) */
+    .angebot { background: var(--salbei-tief); color: var(--weiss); }
+    .angebot .lead { color: rgba(255,255,255,.75); }
+    .angebot h3 { font-size: 1.1rem; font-weight: 600; margin: 56px 0 18px; }
+    .angebot h3:first-of-type { margin-top: 64px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tag { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.25); padding: 8px 16px; border-radius: 999px; font-size: .88rem; }
+
+    /* Gruppenangebote */
+    .gruppen { background: #f0ece2; }
+    .gruppen .lead { margin-bottom: 0; }
+
+    /* Ablauf */
+    .ablauf-liste { counter-reset: schritt; }
+    .ablauf-punkt { display: grid; grid-template-columns: 56px 1fr; gap: 22px; padding: 0 0 44px; position: relative; }
+    .ablauf-punkt::before {
+      counter-increment: schritt; content: counter(schritt);
+      width: 40px; height: 40px; border-radius: 50%; background: var(--erde); color: var(--weiss);
+      display: grid; place-items: center; font-weight: 600; flex: none;
+    }
+    .ablauf-punkt::after {
+      content: ""; position: absolute; left: 19px; top: 44px; bottom: 0; width: 2px; background: rgba(47,42,38,.15);
+    }
+    .ablauf-punkt:last-child::after { display: none; }
+    .ablauf-punkt h3 { margin: 6px 0 8px; font-size: 1.2rem; font-weight: 600; }
+    .ablauf-punkt p { margin: 0; color: var(--grau); }
+
+    /* Praktisches */
+    .fakten { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .fakten div { border-top: 2px solid var(--erde); padding-top: 16px; }
+    .fakten h3 { margin: 0 0 8px; font-size: 1.05rem; font-weight: 600; }
+    .fakten p { margin: 0 0 8px; color: var(--grau); }
+    .fakten small { color: var(--grau); font-size: .85rem; }
+    .versicherungen { margin-top: 10px; font-size: .9rem; color: var(--grau); }
+
+    /* Kontakt */
+    .kontakt .raster { display: grid; grid-template-columns: 1fr 1.15fr; gap: 70px; }
+    label { display: block; font-size: .88rem; color: var(--grau); margin: 22px 0 6px; }
+    input[type=text], input[type=email], input[type=tel], textarea {
+      width: 100%; border: 0; border-bottom: 2px solid rgba(47,42,38,.25); background: transparent;
+      padding: 10px 0; font: inherit; font-size: 1.05rem; color: var(--tiefe); border-radius: 0;
+    }
+    input:focus, textarea:focus { outline: 0; border-bottom-color: var(--erde); }
+    textarea { min-height: 130px; resize: vertical; }
+    .einwilligung { display: flex; gap: 12px; align-items: flex-start; margin: 26px 0 30px; }
+    .einwilligung input { margin-top: 6px; accent-color: var(--erde); }
+    .einwilligung label { margin: 0; font-size: .86rem; }
+    .honigtopf { position: absolute; left: -9999px; height: 0; overflow: hidden; }
+    #status { margin-top: 18px; font-weight: 600; }
+    #status.ok { color: var(--salbei-tief); }
+    #status.fehler { color: #a3382a; }
+
+    .notfall {
+      margin-top: 48px; padding: 22px 26px; background: #fbeee6; border: 1px solid #e7c9b4; border-radius: 16px;
+      font-size: .92rem; color: #5a3b28;
+    }
+    .notfall strong { display: block; margin-bottom: 6px; }
+
+    footer { background: var(--tiefe); color: rgba(255,255,255,.68); padding: 34px 0; font-size: .88rem; }
+    footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { margin-left: 20px; text-decoration: none; }
+    footer a:hover { color: var(--weiss); }
+
+    @media (max-width: 860px) {
+      section { padding: 64px 0; }
+      .hero { padding: 56px 0 72px; }
+      .punkte .wrap { grid-template-columns: 1fr 1fr; }
+      .ueber .raster { grid-template-columns: 1fr; gap: 36px; }
+      .portrait-gross { max-width: 280px; }
+      .checkliste { grid-template-columns: 1fr; }
+      .fakten { grid-template-columns: 1fr; }
+      .kontakt .raster { grid-template-columns: 1fr; gap: 40px; }
+
+      .burger { display: block; }
+      nav {
+        position: fixed; inset: 84px 0 auto 0; background: var(--papier); flex-direction: column; align-items: stretch;
+        gap: 0; padding: 8px 24px 24px; transform: translateY(-8px); opacity: 0; pointer-events: none;
+        transition: opacity .25s, transform .25s; box-shadow: 0 12px 24px rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(47,42,38,.08);
+      }
+      .menu-offen nav { opacity: 1; transform: none; pointer-events: auto; }
+      nav a:not(.kontakt-link) { display: block; padding: 14px 0; border-bottom: 1px solid rgba(47,42,38,.1); }
+      nav .kontakt-link { display: block; text-align: center; margin-top: 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+
+<header id="kopf">
+  <div class="wrap">
+    <a class="logo" href="#start">
+      <strong class="serif">Michele Decorvet</strong>
+      <span>Psychologische Beratung &amp; Coaching</span>
+    </a>
+    <nav id="menu">
+      <a href="#ueber-mich">Über mich</a>
+      <a href="#angebot">Angebot</a>
+      <a href="#praktisches">Praktisches</a>
+      <a class="kontakt-link" href="#kontakt">Kontakt</a>
+    </nav>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="start">
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="kicker">Psychologische Beratung &amp; Coaching in Zürich</div>
+      <h1 class="serif">Mehr Selbstvertrauen, Klarheit und innere Stärke.</h1>
+      <p>Fühlst du dich oft unsicher, zweifelst an dir selbst oder gerätst immer wieder in ähnliche Beziehungsmuster? Vielleicht fällt es dir schwer, Grenzen zu setzen, für deine Bedürfnisse einzustehen oder mehr Leichtigkeit in dein Leben zu bringen.</p>
+      <p>Ich begleite dich dabei, deinen Selbstwert zu stärken, belastende Muster zu verändern und mehr Klarheit, innere Stärke und Lebensfreude zu entwickeln, mit fundiertem psychologischem Wissen, Empathie und einem lösungsorientierten Ansatz auf Augenhöhe.</p>
+      <div class="knoepfe">
+        <a class="knopf" href="#kontakt">Termin anfragen</a>
+        <a class="knopf linie" href="#angebot">Meine Schwerpunkte</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="punkte">
+    <div class="wrap">
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5z"/></svg>
+        <span>Praxis in Zürich &amp; online</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4M16 2v4M3 9h18M5 5h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg>
+        <span>Termine nach Absprache</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span>Deutsch &amp; Schweizerdeutsch</span>
+      </div>
+      <div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>Antwort meist am selben Abend</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="ueber" id="ueber-mich">
+    <div class="wrap">
+      <div class="raster">
+        <div class="bildfeld">
+          <div class="blob" aria-hidden="true"></div>
+          <div class="portrait-gross">
+            <img src="images/michele.png" alt="Michele Decorvet">
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow">Über mich</div>
+          <h2 class="serif">Michele Decorvet</h2>
+
+          <p>Ich begleite Menschen dabei, ihren Selbstwert zu stärken, belastende Muster zu verändern und mehr Klarheit, innere Stärke und Lebensfreude zu entwickeln. Dabei verbinde ich fundiertes psychologisches Wissen mit Empathie, Authentizität und einem lösungsorientierten Ansatz auf Augenhöhe.</p>
+
+          <h3>Sprachen</h3>
+          <p>Deutsch, Schweizerdeutsch</p>
+
+          <a class="profil-link" href="https://www.psychologie.ch/de/psyfinder/michele-decorvet" target="_blank" rel="noopener">Mein Profil auf psychologie.ch ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="angebot" id="angebot">
+    <div class="wrap">
+      <div class="eyebrow" style="color:#f0c7a8">Schwerpunkte meiner Arbeit</div>
+      <h2 class="serif">Woran wir gemeinsam arbeiten können.</h2>
+      <ul class="checkliste">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Selbstwert und Selbstvertrauen stärken</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Beziehungsthemen und wiederkehrende Beziehungsmuster</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Schema- und Innere-Kind-Arbeit</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Female Empowerment</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Erkennen und Zulassen eigener Gefühle</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> ADHS-Beratung im Erwachsenenalter (keine Diagnostik)</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Berufliche Neuorientierung und Karrierefragen</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Vereinbarkeit von Beruf, Familie und persönlichen Lebenszielen</li>
+      </ul>
+
+      <h3>Weitere Themen</h3>
+      <div class="tags">
+        <span class="tag">Einsamkeit</span><span class="tag">Sinnsuche &amp; Orientierung</span><span class="tag">Trauer &amp; Verlust</span>
+        <span class="tag">Persönlichkeitsentwicklung</span><span class="tag">Trennung &amp; Scheidung</span><span class="tag">Stress im Job</span>
+        <span class="tag">Perfektionismus</span><span class="tag">Emotionen &amp; emotionale Regulation</span><span class="tag">Lebenskrisen</span>
+        <span class="tag">Kommunikation &amp; Konflikte</span><span class="tag">Berufliche Veränderung</span><span class="tag">Identität &amp; Selbstfindung</span>
+        <span class="tag">Work-Life-Balance</span><span class="tag">Familie &amp; Elternschaft</span><span class="tag">Entscheidungsfindung</span>
+        <span class="tag">Angehörige</span><span class="tag">Betroffene Drittperson</span>
+      </div>
+
+      <h3>Für wen</h3>
+      <div class="tags">
+        <span class="tag">Jugendliche</span><span class="tag">Junge Erwachsene</span><span class="tag">Erwachsene</span>
+        <span class="tag">Ältere Menschen</span><span class="tag">Eher Frauen</span><span class="tag">Eher Männer</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="gruppen">
+    <div class="wrap">
+      <div class="eyebrow">Gruppenangebote &amp; Workshops</div>
+      <h2 class="serif">Gemeinsam wachsen, in kleiner Runde.</h2>
+      <p class="lead">Auf Anfrage biete ich moderierte Gruppenabende und Workshops zu meinen Schwerpunktthemen an, zum Beispiel für Freundinnen- und Freundesgruppen oder andere Kleingruppen. In einem geschützten und wertschätzenden Rahmen vermittle ich praxisnahe Impulse zu Themen wie Selbstwert, Grenzen setzen, Beziehungsmuster, Emotionen oder Female Empowerment und fördere den gemeinsamen Austausch.</p>
+    </div>
+  </section>
+
+  <section id="ablauf">
+    <div class="wrap">
+      <div class="eyebrow">Ablauf</div>
+      <h2 class="serif">So beginnt die Zusammenarbeit.</h2>
+      <div class="ablauf-liste">
+        <div class="ablauf-punkt">
+          <div>
+            <h3>Erstgespräch (20 Minuten)</h3>
+            <p>Wir lernen uns in einem kurzen, unverbindlichen Gespräch kennen. Du erzählst, was dich beschäftigt, ich erkläre, wie ich arbeite.</p>
+          </div>
+        </div>
+        <div class="ablauf-punkt">
+          <div>
+            <h3>Gemeinsame Standortbestimmung</h3>
+            <p>Wir klären, woran wir arbeiten möchten und wie oft du kommen möchtest.</p>
+          </div>
+        </div>
+        <div class="ablauf-punkt">
+          <div>
+            <h3>Begleitung im eigenen Tempo</h3>
+            <p>Regelmässige Gespräche, so lange und so oft, wie es für dich stimmt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="praktisches" id="praktisches" style="background:#f0ece2">
+    <div class="wrap">
+      <div class="eyebrow">Praktisches</div>
+      <h2 class="serif">Gut zu wissen.</h2>
+      <div class="fakten">
+        <div>
+          <h3>Ort</h3>
+          <p>Vogelsangstrasse 7, 8006 Zürich. Bitte bei «Neuroflex» klingeln.</p>
+          <small>Auf Anfrage sind auch Termine im Kreis 5, in der Nähe des Viadukts, möglich. Online-Sitzungen biete ich ebenfalls an.</small>
+        </div>
+        <div>
+          <h3>Sprache</h3>
+          <p>Deutsch, Schweizerdeutsch</p>
+        </div>
+        <div>
+          <h3>Kosten</h3>
+          <p>
+            170 CHF pro Einzelsitzung (60 Minuten)<br>
+            210 CHF (75 Minuten)<br>
+            250 CHF (90 Minuten)
+          </p>
+          <small>Nicht von der Grundversicherung übernommen. Bitte kläre vorab mit deiner Zusatzversicherung ab, ob eine Kostenbeteiligung möglich ist (GLN-Nummer: 7601 0093 4849 5). Selbstzahlung ist ebenfalls möglich.</small>
+          <div class="versicherungen">Kostenbeteiligung häufig möglich bei: Atupri, Groupe Mutuel / Avenir, KPT, ÖKK (je nach Police).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="kontakt" id="kontakt">
+    <div class="wrap raster">
+      <div>
+        <div class="eyebrow">Kontakt</div>
+        <h2 class="serif">Schreib mir.</h2>
+        <p class="lead">Ich freue mich auf deine Nachricht.</p>
+        <p style="margin:0 0 8px">
+          <a href="tel:+41764891120">+41 76 489 11 20</a>
+        </p>
+        <p style="margin:0">
+          <a href="mailto:michele.decorvet@psychologie.ch">michele.decorvet@psychologie.ch</a>
+        </p>
+      </div>
+
+      <div>
+        <form id="kontaktformular" novalidate>
+          <input type="hidden" name="access_key" value="HIER_DEIN_WEB3FORMS_SCHLUESSEL">
+          <input type="hidden" name="subject" value="Neue Anfrage über die Webseite">
+          <input type="hidden" name="from_name" value="Webseite Michele Decorvet">
+
+          <div class="honigtopf" aria-hidden="true">
+            <label for="botcheck">Nicht ausfüllen</label>
+            <input type="checkbox" name="botcheck" id="botcheck" tabindex="-1" autocomplete="off">
+          </div>
+
+          <label for="name" style="margin-top:0">Name</label>
+          <input type="text" id="name" name="name" required maxlength="100" autocomplete="name">
+
+          <label for="email">E-Mail</label>
+          <input type="email" id="email" name="email" required maxlength="150" autocomplete="email">
+
+          <label for="telefon">Telefon (optional)</label>
+          <input type="tel" id="telefon" name="telefon" maxlength="30" autocomplete="tel">
+
+          <label for="nachricht">Deine Nachricht</label>
+          <textarea id="nachricht" name="message" required maxlength="3000" placeholder="Was möchtest du mir mitteilen?"></textarea>
+
+          <div class="einwilligung">
+            <input type="checkbox" id="datenschutz" required>
+            <label for="datenschutz">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin einverstanden, dass meine Angaben vertraulich zur Bearbeitung meiner Anfrage verwendet werden.</label>
+          </div>
+
+          <button class="knopf" type="submit" id="senden">Nachricht senden</button>
+          <div id="status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="notfall">
+          <strong>Befindest du dich in einer akuten Krise?</strong>
+          Diese Webseite ist kein Notfalldienst. Wende dich bitte direkt an die Dargebotene Hand (Tel. 143) oder im Notfall an die Rettung (Tel. 144).
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="jahr"></span> Michele Decorvet · Vogelsangstrasse 7, 8006 Zürich · <a href="tel:+41764891120">+41 76 489 11 20</a></span>
+    <span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('jahr').textContent = new Date().getFullYear();
+
+  /* Mobiles Menü */
+  const kopf = document.getElementById('kopf');
+  const burger = document.getElementById('burger');
+  burger.addEventListener('click', () => {
+    const offen = kopf.classList.toggle('menu-offen');
+    burger.setAttribute('aria-expanded', offen ? 'true' : 'false');
+    burger.setAttribute('aria-label', offen ? 'Menü schliessen' : 'Menü öffnen');
+  });
+  document.getElementById('menu').addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') { kopf.classList.remove('menu-offen'); burger.setAttribute('aria-expanded', 'false'); }
+  });
+
+  /* Formular */
+  const form = document.getElementById('kontaktformular');
+  const status = document.getElementById('status');
+  const knopf = document.getElementById('senden');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.className = '';
+    status.textContent = '';
+
+    const name = form.elements['name'].value.trim();
+    const email = form.elements['email'].value.trim();
+    const nachricht = form.elements['message'].value.trim();
+    if (!name || !nachricht || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      status.className = 'fehler';
+      status.textContent = 'Bitte fülle Name, E-Mail und Nachricht aus.';
+      return;
+    }
+    if (!document.getElementById('datenschutz').checked) {
+      status.className = 'fehler';
+      status.textContent = 'Bitte bestätige die Datenschutzerklärung.';
+      return;
+    }
+
+    knopf.disabled = true;
+    knopf.textContent = 'Wird gesendet…';
+
+    try {
+      const antwort = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+      });
+      const daten = await antwort.json();
+      if (antwort.ok && daten.success) {
+        status.className = 'ok';
+        status.textContent = 'Danke für deine Nachricht. Ich melde mich bei dir.';
+        form.reset();
+      } else {
+        throw new Error(daten.message || 'Fehler');
+      }
+    } catch (fehler) {
+      status.className = 'fehler';
+      status.textContent = 'Das Senden hat nicht geklappt. Bitte versuche es später nochmals.';
+    } finally {
+      knopf.disabled = false;
+      knopf.textContent = 'Nachricht senden';
+    }
+  });
+</script>
+
+</body>
+</html>
