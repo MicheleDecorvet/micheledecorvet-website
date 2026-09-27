@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum | Michele Decorvet</title>
+  <meta name="description" content="Impressum von Michele Decorvet, psychologische Beratung und Coaching in Zürich.">
+  <link rel="canonical" href="https://micheledecorvet.ch/impressum.html">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    :root {
+      --salbei: #5b7a68;
+      --salbei-tief: #3c5548;
+      --erde: #b0704a;
+      --papier: #faf7f1;
+      --tiefe: #2f2a26;
+      --grau: #6e655e;
+      --weiss: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+      color: var(--tiefe);
+      background: var(--papier);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    a { color: var(--salbei-tief); }
+    :focus-visible { outline: 3px solid var(--erde); outline-offset: 3px; }
+
+    header { background: var(--salbei-tief); color: var(--weiss); }
+    header .innen { max-width: 1080px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; height: 72px; }
+    header a.logo { color: var(--weiss); text-decoration: none; font-weight: 700; font-size: 1.1rem; }
+    header nav a { color: var(--weiss); text-decoration: none; font-size: .95rem; opacity: .85; }
+    header nav a:hover { opacity: 1; }
+
+    main { padding: 64px 0 90px; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.9rem, 5vw, 2.5rem); color: var(--salbei-tief); margin: 0 0 8px; }
+    .stand { color: var(--grau); font-size: .9rem; margin: 0 0 44px; }
+    h2 { font-size: 1.2rem; color: var(--salbei-tief); margin: 40px 0 10px; }
+    p { margin: 0 0 14px; }
+    .hinweis {
+      margin-top: 36px; padding: 16px 20px; background: var(--weiss); border-left: 4px solid var(--erde);
+      border-radius: 4px; font-size: .9rem; color: var(--grau);
+    }
+
+    footer { background: var(--salbei-tief); color: rgba(255,255,255,.7); padding: 30px 0; font-size: .88rem; }
+    footer .innen { max-width: 1080px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    footer a { color: rgba(255,255,255,.85); margin-left: 20px; text-decoration: none; }
+    footer a:hover { color: var(--weiss); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="innen">
+    <a class="logo" href="index.html">Michele Decorvet</a>
+    <nav><a href="index.html">Zurück zur Startseite</a></nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Impressum</h1>
+    <p class="stand">Stand: September 2026</p>
+
+    <h2>Angaben gemäss Art. 3 UWG</h2>
+    <p>
+      Michele Decorvet<br>
+      Psychologische Beratung &amp; Coaching<br>
+      Vogelsangstrasse 7<br>
+      8006 Zürich<br>
+      Schweiz
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Telefon: <a href="tel:+41764891120">+41 76 489 11 20</a><br>
+      E-Mail: <a href="mailto:michele.decorvet@psychologie.ch">michele.decorvet@psychologie.ch</a>
+    </p>
+
+    <h2>Berufliche Angaben</h2>
+    <p>
+      GLN-Nummer: 7601 0093 4849 5<br>
+      Berufsprofil: <a href="https://www.psychologie.ch/de/psyfinder/michele-decorvet" target="_blank" rel="noopener">psychologie.ch/de/psyfinder/michele-decorvet</a>
+    </p>
+
+    <h2>Haftungsausschluss</h2>
+    <p>Die Inhalte dieser Webseite wurden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen. Diese Webseite ersetzt keine psychologische, medizinische oder therapeutische Beratung im Einzelfall.</p>
+    <p>Verweise und Links auf Webseiten Dritter liegen ausserhalb des eigenen Verantwortungsbereichs. Es wird jegliche Verantwortung für solche Webseiten abgelehnt.</p>
+
+    <h2>Urheberrecht</h2>
+    <p>Die Urheberrechte an Inhalten, Texten und Bildern dieser Webseite liegen bei Michele Decorvet, soweit nicht anders gekennzeichnet. Eine Verwendung ohne vorherige schriftliche Zustimmung ist nicht gestattet.</p>
+
+    <div class="hinweis">
+      Bei einem akuten psychischen Notfall wende dich bitte direkt an die Dargebotene Hand (Tel. 143) oder den Notruf (Tel. 144), nicht an diese Webseite.
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="innen">
+    <span>© <span id="jahr"></span> Michele Decorvet · Vogelsangstrasse 7, 8006 Zürich</span>
+    <span><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></span>
+  </div>
+</footer>
+
+<script>document.getElementById('jahr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
